@@ -1,14 +1,14 @@
 import React from "react";
 import Article from "./Article";
 
-function ArticleList(props) {
-    return (
-        <main>
-            {props.posts.map((post, index) => (
-                <Article key={index} title={post.title} date={post.date} previewHeader={post.previewHeader} />
-            ))}
-        </main>
-    );
-}
+const ArticleList = ({ posts }) => {
+  return (
+    <main>
+      {posts.map((post, index) => (
+        <Article key={index} {...post} />
+      ))}
+    </main>
+  );
+};
 
 export default ArticleList;
