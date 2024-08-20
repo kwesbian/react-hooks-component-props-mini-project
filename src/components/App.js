@@ -6,7 +6,7 @@ import ArticleList from "./ArticleList";
 function App() {
   const blogName = "Kwelingual";
   const aboutText = "Welcome to Kwe's blog";
-  const image = "data:image/png;base64,..."; // truncated for brevity
+  const image = "data:image/png;base64,..."; 
   const posts = [
     {title: "Post 1", date: "February 2, 2022", previewHeader: "This is a preview of post 1", readingTime: 3},
     {title: "Post 2", date: "March 3, 2022", previewHeader: "This is a preview of post 2", readingTime: 7},
